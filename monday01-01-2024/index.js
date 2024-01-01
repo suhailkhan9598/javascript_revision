@@ -17,3 +17,22 @@ function checkscope () {
 
 }
 checkscope()
+
+let x = "hello world" ///srting
+let y = 342
+let z = true
+let a = null
+let b;
+let obj1={
+    name:"manjeet"
+}
+let obj2 = {
+    name: "manjeet"
+}
+console.log(typeof obj1, typeof obj2)
+console.log(obj1,obj2)
+console.log(typeof x)
+console.log(typeof y)
+console.log(typeof z)
+console.log(typeof a)
+console.log(typeof b)
