@@ -16,5 +16,5 @@ let b = 2;
 
 // let c = (d + a + b);
 console.log(b)
-245
+245//
 // console.log(c)
