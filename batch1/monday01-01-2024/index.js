@@ -36,15 +36,18 @@
 // console.log(typeof z)
 // console.log(typeof a)
 // console.log(typeof b)
+
 // Create a script that classifies the temperature into "Hot," "Moderate," or "Cold" based on the following criteria: Hot(above 30°C), Moderate(between 15°C and 30°C), Cold(below 15°C).
 
 
 
-let number = 10;
-if (number % 2==0) {
-console.log("even")
-} else {
-    console.log("odd")
+
+function check (number) {
+    if (number % 2 == 0) {
+        console.log("even")
+    } else {
+        console.log("odd")
+    }
 }
-"masai" == "masai"
-"masai"=="Masai"
+
+check(17)
