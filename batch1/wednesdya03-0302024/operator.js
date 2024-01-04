@@ -1,24 +1,68 @@
+
 // let a = 10;
-// let b = 15;
-// let c = 2;
-// let d = 5;
+// let b = 1500;
+// let c = 200;
+// let d = 50;
 
-// if (a > b && a > c && a > d) {
-//     console.log("a is greater")
-// } else if (b > a && b > c && b > d) {
-//     console.log("b is greater")
 
-// } else if (c > b && c > a && c > d) {
-//     console.log("c is greater")
-
-// } else if (d > b && d > c && d > a) {
-//     console.log("d is greater")
-
-// } else {
-//     confirm.log("not valid")
+// if (a > b) {
+//     if (a > c) {
+//         if (a > d) {
+//             console.log("A")
+//         }
+//     }
+// } if (b > a) {
+//     if (b > c) {
+//         if (b > d) {
+//             console.log("B")
+//         }
+//     }
+// } if (c > a) {
+//     if (c > b) {
+//         if (c > d) {
+//             console.log("C")
+//         }
+//     }
+// } if (d > a) {
+//     if (d > b) {
+//         if (d > c) {
+//             console.log("D")
+//         }
+//     }
 // }
 
-let a = 2
-let b = "4"
-let c = (a + +b)
-console.log(c)
+
+
+let variable = "B";
+
+switch (variable) {
+    case "A":
+        console.log("A is selected");
+        break;
+    case "B":
+        console.log("B is selected");
+        break;
+    case "C":
+        console.log("C is selected");
+        break;
+    case "D":
+        console.log("D is selected");
+        break;
+    default:
+        console.log("Invalid selection");
+}
+
+//way two
+
+// let data = "D"
+// switch (data) {
+//     case "A":
+//     case "B":
+//     case "C":
+//     case "D":
+//         console.log(`${data} is Selected`)
+//         break;
+//     default:
+//         console.log("Invailed Value")
+// }
+
