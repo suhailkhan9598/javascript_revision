@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Apply some basic styling for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Style the form container */
+    .form-container {
+      width: 400px;
+      margin: auto;
+    }
+
+    /* Style the form rows */
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    /* Style the form labels */
+    label {
+      width: 45%; /* Adjust the width as needed */
+      text-align: right;
+      margin-right: 5%;
+    }
+
+    /* Style the form input boxes */
+    input {
+      width: 45%; /* Adjust the width as needed */
+    }
+  </style>
+  <title>Horizontal Input Boxes Form</title>
+</head>
+<body>
+  <div class="form-container">
+    <form>
+      <!-- First row -->
+      <div class="form-row">
+        <label for="field1">Field 1:</label>
+        <input type="text" id="field1" name="field1">
+        <label for="field2">Field 2:</label>
+        <input type="text" id="field2" name="field2">
+      </div>
+
+      <!-- Second row -->
+      <div class="form-row">
+        <label for="field3">Field 3:</label>
+        <input type="text" id="field3" name="field3">
+        <label for="field4">Field 4:</label>
+        <input type="text" id="field4" name="field4">
+      </div>
+
+      <!-- Repeat the pattern for the remaining rows -->
+
+      <!-- Tenth row -->
+      <div class="form-row">
+        <label for="field9">Field 9:</label>
+        <input type="text" id="field9" name="field9">
+        <label for="field10">Field 10:</label>
+        <input type="text" id="field10" name="field10">
+      </div>
+
+      <!-- Add a submit button -->
+      <div class="form-row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

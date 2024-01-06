@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            form {
+                width: 40%;
+                margin: auto;
+                border: 1px solid gray;
+            }
+            form h1 {
+                text-align: center;
+            }
+            .form_tags_container {
+                width: 90%;
+                margin: auto;
+                border: 1px solid rgb(128, 128, 128);
+            }
+
+            .name_div {
+                width: 100%;
+                margin: 10px auto;
+                display: flex;
+                /* border: 1px solid green; */
+                justify-content: space-around;
+            }
+            .name_div input {
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+
+            }
+            span {
+                color: red;
+            }
+            .select_div {
+                width: 88%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .select_div select {
+                /* margin-top: 10px; */
+                height: 35px;
+                border-radius: 5px;
+            }
+            .name_div1 {
+                width: 88%;
+                margin: 10px auto;
+                display: flex;
+                /* border: 1px solid green; */
+                justify-content: space-evenly;
+                /* place-items: center; */
+            }
+            .name_div1 input {
+                width: 90%;
+                margin: auto;
+                border-radius: 5px;
+
+                height: 30px;
+                display: flex;
+                /* margin-right: 10px; */
+                justify-content: center;
+                /* align-items: center; */
+            }
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Registration Form</h1>
+            <div class="form_tags_container">
+                <div class="name_div">
+                    <label for=""
+                        >Name <span>*</span><br />
+                        <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            required
+                    /></label>
+                    <label for=""
+                        >Father's Name <span>*</span><br />
+                        <input type="text" placeholder="Enter Your Father Name"
+                    /></label>
+                </div>
+                <div class="name_div">
+                    <label for=""
+                        >Name <span>*</span><br />
+                        <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            required
+                    /></label>
+                    <label for=""
+                        >Father's Name <span>*</span><br />
+                        <input type="text" placeholder="Enter Your Father Name"
+                    /></label>
+                </div>
+                <div class="name_div">
+                    <label for=""
+                        >Name <span>*</span><br />
+                        <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            required
+                    /></label>
+                    <label for=""
+                        >Father's Name <span>*</span><br />
+                        <input type="text" placeholder="Enter Your Father Name"
+                    /></label>
+                </div>
+                <div class="select_div">
+                    <label for="">State</label>
+                    <select name="" id="">
+                        <option value="">State</option>
+                        <option value="">UP</option>
+                        <option value="">Delhi</option>
+                        <option value="">Lucknow</option>
+                    </select>
+                    <br>
+                    <label for="">City</label>
+
+                    <select name="" id="">
+                        <option value="">State</option>
+                        <option value="">UP</option>
+                        <option value="">UP</option>
+                        <option value="">UP</option>
+                    </select>
+                </div>
+                <div class="name_div1">
+                    <label for=""
+                        >10th <span>*</span><br />
+                        <input
+                            type="text"
+                            placeholder="10th"
+                            required
+                    /></label>
+                    <label for=""
+                        >12th <span>*</span><br />
+                        <input type="text" placeholder="12th"
+                    /></label>
+                    <label for=""
+                        >Graduation <span>*</span><br />
+                        <input type="text" placeholder="Graduation"
+                    /></label>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
