@@ -15,19 +15,47 @@
 } */
 .flex_container {
   display: flex;
-  align-content:center ; /* Use align-items to center a single item */
+   /* Use align-items to center a single item */
   /* justify-content: center; Optional: horizontally center the item */
   border: 1px solid green;
   width: 50%;
-  height: 500px;
+  margin: auto;
+  height: 200px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+
 }
+.flex_container div{
+    height: 50px;
+    width: 100px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.item-1{
+    /* flex-grow: 3; */
+
+    /* flex-grow: 1;     Grow equally when there's extra space */
+    flex-shrink: 1;
+    /* flex-basis: 300px;   Shrink more than other items when there's not enough space */
+}
+.item-2{
+/* flex-basis: 200px; */
+flex-shrink: 2;
+}
+
+
+
+
+
+
 
     </style>
 </head>
 <body>
     <div class="flex_container" >
-
-        <h1>hello from jaipur</h1>
+<div  class=" item-1">1</div>
+<div class=" item-2">2</div>
+<div class=" item-3">3</div>
     </div>
 </body>
 </html>
