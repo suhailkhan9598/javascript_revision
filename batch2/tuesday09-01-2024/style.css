@@ -1,0 +1,74 @@
+
+    .container{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        border: 1px solid green;
+        text-align: center;
+        padding: 20px;
+    }
+    .child_1{
+        width: 45%;
+        /* border: 2px solid red; */
+        padding: 20px;
+        /* margin: auto; */
+        /* align-items: center; */
+
+    }
+        .child_2{
+        width: 45%;
+        /* border: 2px solid rgb(0, 195, 255); */
+        padding: 20px;
+        align-items: center;
+        margin: auto;
+    }
+    .child_2 img{
+        width: 60%;
+        border-radius: 10px;
+        /* border: 1px solid gray; */
+    }
+/* for mobile screen */
+    @media screen and (min-width:250px) and (max-width:420px) {
+    .container{
+        width: 90%;
+        margin: auto;
+        display: block;
+        text-align: justify;
+
+    }
+.child_1{
+        width: 90%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: auto;
+        /* align-items: center; */
+
+    }
+    .not_ints_btn_div {
+        /* text-align: center; */
+        width: 80%;
+        margin: auto;
+    }
+    .not_ints_btn_div button{
+width: 100%;
+padding: 10px;
+background-color:cyan;
+border-radius: 5px;
+border: none;
+    }
+        .child_2{
+        width: 90%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 30px auto;
+
+
+    }
+    .child_2 img{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* border-radius: 10px ! important; */
+    }
+
+
+
+
+    }

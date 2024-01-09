@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: beige;
+            height: 50px;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+
+        a::after {
+            content: "";
+            border-bottom: 3px solid transparent;
+            position: absolute;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+            transition: right 0.8s ease;  /* Use transition on 'right' property */
+        }
+
+        a:hover::after {
+            right: 0;  /* Move the border from right: 100% to right: 0 on hover */
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Project</a>
+    </nav>
+</body>
+</html>
