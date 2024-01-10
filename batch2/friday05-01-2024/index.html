@@ -101,12 +101,25 @@
                     <label for="">Greduation Marks <sup>*</sup></label
                         ><br>
                         <input type="text"><br>
-                        <button>Register</button><br><br>
+                        <button id="btn">Register</button><br><br>
 <h3>Already have account <a href="http://127.0.0.1:5501/javascript_revision/batch2/friday05-01-2024/manish.html" target="_blank">Login  Here</a></h3>
                 </div>
                 <br><br>
 
             </form>
         </div>
+        <script>
+            let btn=document.getElementById("btn")
+            btn.addEventListener("click",data)
+
+            function data () {
+                setTimeout(()=>{
+alert("your data submited")
+                },3000)
+    alert("you click the button")
+
+
+}
+        </script>
     </body>
 </html>
