@@ -12,7 +12,7 @@
             }
             form {
                 width: 40%;
-                margin: auto;
+                margin: 50px auto;
                 padding: 20px;
                 /* border: 1px solid rgb(36, 167, 16); */
                 /* border: 2px solid rgb(224, 13, 13); */
@@ -24,6 +24,7 @@
             .form_tags_container {
                 width: 90%;
                 margin: auto;
+                /* border: 1px solid green; */
             }
 
             .name_div {
@@ -56,23 +57,43 @@
                 width: 88%;
                 margin: 10px auto;
                 display: flex;
+                gap: 20px;
                 /* border: 1px solid green; */
-                justify-content: space-evenly;
+                justify-content: space-between;
                 /* place-items: center; */
             }
             .name_div1 input {
-                width: 90%;
-                margin: auto;
+                width: 100%;
+                /* margin: 10px; */
                 border-radius: 5px;
-
+                padding-left: 10px;
                 height: 30px;
                 display: flex;
+                /* border: 1px solid green; */
                 /* margin-right: 10px; */
                 justify-content: center;
                 /* align-items: center; */
             }
+            .name_div2 {
+                width: 88%;
+                margin: 10px auto;
+                display: flex;
+
+                /* gap: 20px; */
+                border: 1px solid green;
+            }
+
+            .sarkane_liye {
+                border: 1px solid salmon;
+                margin-top: 10px;
+                width: 380px;
+                /* padding-left: 30px; */
+            }
+            .sarkane_liye input{
+                margin: 0px 20px;
+            }
             .reg_btn {
-                width: 60%;
+                width: 50%;
                 margin: 20px auto;
                 /* border: 1px solid yellow; */
                 text-align: center;
@@ -88,6 +109,12 @@
                 color: white;
                 font-weight: 500;
             }
+            .reg_btn button:hover {
+                background-color: brown;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+            }
+            /* Media Query for mobile screen */
 
             @media screen and (min-width: 250px) and (max-width: 420px) {
                 form {
@@ -144,7 +171,7 @@
                 }
                 .name_div1 input {
                     width: 90%;
-                margin: 0px;
+                    margin: 0px;
                     border-radius: 5px;
 
                     height: 30px;
@@ -166,18 +193,20 @@
                     padding: 10px;
                     background-color: salmon;
                     border: none;
+                    font-size: 10px;
+                    font-weight: bold;
                     border-radius: 10px;
                 }
-                .reg_btn button:hover{
+                .reg_btn button:hover {
                     background-color: brown;
                     cursor: pointer;
                     transition: all 0.5s ease-in-out;
                 }
             }
 
+            /* Media Query for tablet screen */
 
-
-            @media screen and (min-width: 421px) and (max-width: 768px) {
+            @media screen and (min-width: 421px) and (max-width: 1024px) {
                 form {
                     width: 100%;
                     margin: auto;
@@ -232,7 +261,7 @@
                 }
                 .name_div1 input {
                     width: 95%;
-                margin: 0px;
+                    margin: 0px;
                     border-radius: 5px;
 
                     height: 30px;
@@ -256,17 +285,20 @@
                     border: none;
                     border-radius: 10px;
                 }
-                .reg_btn button:hover{
+                .reg_btn button:hover {
                     background-color: brown;
                     cursor: pointer;
                     transition: all 0.5s ease-in-out;
                 }
             }
+            marquee {
+                background-color: salmon;
+            }
         </style>
     </head>
     <body>
         <form>
-            <h1>Registration Form</h1>
+            <marquee scrollamount="20"><h1>Registration Form</h1></marquee>
             <div class="form_tags_container">
                 <div class="name_div">
                     <label for=""
@@ -307,6 +339,17 @@
                         <input type="text" placeholder="Enter Your Father Name"
                     /></label>
                 </div>
+
+                <div class="name_div2">
+                    <label for=""
+                        >Gender <span>*</span> <br />
+                        <div class="sarkane_liye">
+                            Male: <input type="radio" /> Female:
+                            <input type="radio" /> Other: <input type="radio" />
+                        </div>
+                    </label>
+                </div>
+
                 <div class="select_div">
                     <label for="">State</label>
                     <select name="" id="">
