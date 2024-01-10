@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            form {
+                width: 40%;
+                margin: auto;
+                padding: 20px;
+                /* border: 1px solid rgb(36, 167, 16); */
+                /* border: 2px solid rgb(224, 13, 13); */
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            form h1 {
+                text-align: center;
+            }
+            .form_tags_container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .name_div {
+                width: 100%;
+                margin: 10px auto;
+                display: flex;
+                /* border: 1px solid green; */
+                justify-content: space-around;
+            }
+            .name_div input {
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+            }
+            span {
+                color: red;
+            }
+            .select_div {
+                width: 88%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .select_div select {
+                /* margin-top: 10px; */
+                height: 35px;
+                border-radius: 5px;
+            }
+            .name_div1 {
+                width: 88%;
+                margin: 10px auto;
+                display: flex;
+                /* border: 1px solid green; */
+                justify-content: space-evenly;
+                /* place-items: center; */
+            }
+            .name_div1 input {
+                width: 90%;
+                margin: auto;
+                border-radius: 5px;
+
+                height: 30px;
+                display: flex;
+                /* margin-right: 10px; */
+                justify-content: center;
+                /* align-items: center; */
+            }
+            .reg_btn {
+                width: 60%;
+                margin: 20px auto;
+                /* border: 1px solid yellow; */
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .reg_btn button {
+                width: 60%;
+                padding: 10px;
+                background-color: salmon;
+                border: none;
+                border-radius: 10px;
+                font-size: larger;
+                color: white;
+                font-weight: 500;
+            }
+
+            @media screen and (min-width: 250px) and (max-width: 420px) {
+                form {
+                    width: 100%;
+                    margin: auto;
+                    border: 1px solid rgb(36, 167, 16);
+                }
+                form h1 {
+                    text-align: center;
+                }
+                .form_tags_container {
+                    width: 90%;
+                    margin: auto;
+
+                    /* border: 2px solid rgb(224, 13, 13); */
+                }
+
+                .name_div {
+                    width: 100%;
+
+                    display: block;
+
+                    /* border: 1px solid green; */
+                }
+                .name_div input {
+                    width: 97%;
+                    margin: 5px auto;
+                    height: 40px;
+                }
+                span {
+                    color: red;
+                }
+                .select_div {
+                    width: 98%;
+                    margin: auto;
+                    display: flex;
+                    margin-right: 10px;
+                    /* border: 1px solid greenyellow; */
+                    flex-direction: column;
+                }
+                .select_div select {
+                    /* margin-top: 10px; */
+                    height: 35px;
+                    border-radius: 5px;
+                }
+                .name_div1 {
+                    width: 100%;
+                    margin: 10px auto;
+                    display: flex;
+                    /* border: 1px solid green; */
+                    justify-content: space-between;
+                    /* place-items: center; */
+                    padding-left: -15px;
+                }
+                .name_div1 input {
+                    width: 90%;
+                margin: 0px;
+                    border-radius: 5px;
+
+                    height: 30px;
+                    display: flex;
+                    /* margin-right: 10px; */
+                    justify-content: center;
+                    /* align-items: center; */
+                }
+
+                .reg_btn {
+                    width: 60%;
+                    margin: 20px auto;
+                    /* border: 1px solid yellow; */
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .reg_btn button {
+                    width: 80%;
+                    padding: 10px;
+                    background-color: salmon;
+                    border: none;
+                    border-radius: 10px;
+                }
+                .reg_btn button:hover{
+                    background-color: brown;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+
+
+            @media screen and (min-width: 421px) and (max-width: 768px) {
+                form {
+                    width: 100%;
+                    margin: auto;
+                    border: 1px solid rgb(36, 167, 16);
+                }
+                form h1 {
+                    text-align: center;
+                }
+                .form_tags_container {
+                    width: 90%;
+                    margin: auto;
+
+                    /* border: 2px solid rgb(224, 13, 13); */
+                }
+
+                .name_div {
+                    width: 100%;
+
+                    display: block;
+
+                    /* border: 1px solid green; */
+                }
+                .name_div input {
+                    width: 97%;
+                    margin: 5px auto;
+                    height: 40px;
+                }
+                span {
+                    color: red;
+                }
+                .select_div {
+                    width: 98%;
+                    margin: auto;
+                    display: flex;
+                    margin-right: 10px;
+                    /* border: 1px solid greenyellow; */
+                    flex-direction: column;
+                }
+                .select_div select {
+                    /* margin-top: 10px; */
+                    height: 35px;
+                    border-radius: 5px;
+                }
+                .name_div1 {
+                    width: 100%;
+                    margin: 10px auto;
+                    display: flex;
+                    /* border: 1px solid green; */
+                    justify-content: space-between;
+                    /* place-items: center; */
+                    padding-left: -15px;
+                }
+                .name_div1 input {
+                    width: 95%;
+                margin: 0px;
+                    border-radius: 5px;
+
+                    height: 30px;
+                    display: flex;
+                    /* margin-right: 10px; */
+                    justify-content: center;
+                    /* align-items: center; */
+                }
+
+                .reg_btn {
+                    width: 60%;
+                    margin: 20px auto;
+                    /* border: 1px solid yellow; */
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .reg_btn button {
+                    width: 80%;
+                    padding: 10px;
+                    background-color: salmon;
+                    border: none;
+                    border-radius: 10px;
+                }
+                .reg_btn button:hover{
+                    background-color: brown;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Registration Form</h1>
+            <div class="form_tags_container">
+                <div class="name_div">
+                    <label for=""
+                        >Name <span>*</span><br />
+                        <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            required
+                    /></label>
+                    <label for=""
+                        >Father's Name <span>*</span><br />
+                        <input type="text" placeholder="Enter Your Father Name"
+                    /></label>
+                </div>
+                <div class="name_div">
+                    <label for=""
+                        >Name <span>*</span><br />
+                        <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            required
+                    /></label>
+                    <label for=""
+                        >Father's Name <span>*</span><br />
+                        <input type="text" placeholder="Enter Your Father Name"
+                    /></label>
+                </div>
+                <div class="name_div">
+                    <label for=""
+                        >Name <span>*</span><br />
+                        <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            required
+                    /></label>
+                    <label for=""
+                        >Father's Name <span>*</span><br />
+                        <input type="text" placeholder="Enter Your Father Name"
+                    /></label>
+                </div>
+                <div class="select_div">
+                    <label for="">State</label>
+                    <select name="" id="">
+                        <option value="">State</option>
+                        <option value="">UP</option>
+                        <option value="">Delhi</option>
+                        <option value="">Lucknow</option>
+                    </select>
+                    <br />
+                    <label for="">City</label>
+
+                    <select name="" id="">
+                        <option value="">State</option>
+                        <option value="">UP</option>
+                        <option value="">UP</option>
+                        <option value="">UP</option>
+                    </select>
+                </div>
+                <div class="name_div1">
+                    <label for=""
+                        >10th <span>*</span><br />
+                        <input type="text" placeholder="10th" required
+                    /></label>
+                    <label for=""
+                        >12th <span>*</span><br />
+                        <input type="text" placeholder="12th"
+                    /></label>
+                    <label for=""
+                        >UG/PG <span>*</span><br />
+                        <input type="text" placeholder="UG/PG"
+                    /></label>
+                </div>
+                <div class="reg_btn">
+                    <button>Register👇</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
