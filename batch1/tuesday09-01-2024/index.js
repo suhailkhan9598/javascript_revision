@@ -16,17 +16,17 @@
 // let bag1 = "";
 // let arr = "hellosir";
 
-// for (let i = 0; i <= arr.length - 1; i++) {
-//     if (arr[i] === "a"||arr[i]=="i"||arr[i]=="e"||arr[i]=="o") {
-//         bag = bag +arr[i]+" "
+for (let i = 0; i <= arr.length - 1; i++) {
+    if (arr[i] === "a"||arr[i]=="i"||arr[i]=="e"||arr[i]=="o") {
+        bag = bag +arr[i]+" "
 
-//     }
-//     else {
-//         bag1=bag1+arr[i]+" "
-//     }
-// }
-// console.log(bag);
-// console.log(bag1);
+    }
+    else {
+        bag1=bag1+arr[i]+" "
+    }
+}
+console.log(bag);
+console.log(bag1);
 
 
 // let count = 0;
