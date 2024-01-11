@@ -16,17 +16,17 @@
 // let bag1 = "";
 // let arr = "hellosir";
 
-for (let i = 0; i <= arr.length - 1; i++) {
-    if (arr[i] === "a"||arr[i]=="i"||arr[i]=="e"||arr[i]=="o") {
-        bag = bag +arr[i]+" "
+// for (let i = 0; i <= arr.length - 1; i++) {
+//     if (arr[i] === "a"||arr[i]=="i"||arr[i]=="e"||arr[i]=="o") {
+//         bag = bag +arr[i]+" "
 
-    }
-    else {
-        bag1=bag1+arr[i]+" "
-    }
-}
-console.log(bag);
-console.log(bag1);
+//     }
+//     else {
+//         bag1=bag1+arr[i]+" "
+//     }
+// }
+// console.log(bag);
+// console.log(bag1);
 
 
 // let count = 0;
@@ -84,13 +84,13 @@ console.log(bag1);
 //     }
 //     console.log(bag);
 // }
-for (var father = 1; father <= 5; father++) {
-    var bag = "";
-    for (var son = 1; son <= father; son++) {
-        bag = bag + son + " ";
-    }
-    console.log(bag);
-}
+// for (var father = 1; father <= 5; father++) {
+//     var bag = "";
+//     for (var son = 1; son <= father; son++) {
+//         bag = bag + son + " ";
+//     }
+//     console.log(bag);
+// }
 
 // for (var father = 4; father >= 1; father--) {
 //     var bag = "";
@@ -100,18 +100,23 @@ for (var father = 1; father <= 5; father++) {
 //     console.log(bag);
 // }
 
-for (let i = 5; i >=1 ; i--) {
-    let row = "";
-    for (let j = 1; j <= 5 - i; j++) {
-        row += " ";
-    }
-    for (let k = 1; k <= 2 * i - 1; k++) {
-        row += "*";
-    }
-    console.log(row);
-}
+// for (let i = 5; i >=1 ; i--) {
+//     let row = "";
+//     for (let j = 1; j <= 5 - i; j++) {
+//         row += " ";
+//     }
+//     for (let k = 1; k <= 2 * i - 1; k++) {
+//         row += "*";
+//     }
+//     console.log(row);
+// }
 // 1
 // 1 2
 // 1 2 3
 // 1 2 3 4
 // 1 2 3 4 5
+
+
+// for (i = 0; i < 10; i++){
+//     console.log(i)
+// }
