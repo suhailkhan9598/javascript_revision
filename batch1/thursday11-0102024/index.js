@@ -13,7 +13,7 @@
 
 // numbers.forEach(number => console.log(number));
 
-// let a = numbers.map(function(ele,index){
+// let a = numbers.map((ele,index)=>{
 //     console.log(ele,index)
 //     return ele+1
 // })
