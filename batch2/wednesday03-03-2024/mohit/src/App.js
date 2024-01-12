@@ -1,27 +1,12 @@
+import React from 'react'
+import Data from './component/Data'
 
-import './App.css';
-import useState, { useEffect } from "react"
-import axios from "axios"
-function App () {
-  const [data, setData] = useState([])
-  const getData = () => {
-    try {
-      let res = axios.get("https://fakestoreapi.com/products")
-      console.log(res)
-      // setData(res.data)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  useEffect(() => {
-
-    getData()
-  }, [])
+const App = () => {
   return (
-    <div className="App">
-<h1>home page</h1>
+    <div>
+      <Data />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

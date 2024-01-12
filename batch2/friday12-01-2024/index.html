@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .gallery {
+                width: 100%;
+
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 30px;
+                padding: 20px;
+            }
+            .gallery img {
+                width: 100%;
+                mix-blend-mode: color-burn;
+                padding: 10px;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 50px;
+                background: #f9f6f7;
+                box-shadow: 20px 20px 29px #a4a2a3, -20px -20px 29px #ffffff;
+            }
+            /* media query */
+            /* for mobile screen  1 image per row*/
+        @media screen and (min-width: 200px) and (max-width: 420px){
+                .gallery {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    /* border: 2px solid yellow; */
+                }
+            }
+                /* for tablet screen  2 image per row*/
+        @media screen and (min-width: 421px) and (max-width: 1024px){
+                .gallery {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    /* border: 2px solid yellow; */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gallery">
+            <img
+                src="https://images.unsplash.com/photo-1704895390342-b52a2f45786c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+            <img
+                src="https://images.unsplash.com/photo-1695883701435-7bd88f796e05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+                alt="" />
+            <img
+                src="https://plus.unsplash.com/premium_photo-1670793629760-e6432f5a9213?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D"
+                alt="" />
+            <img
+                src="https://plus.unsplash.com/premium_photo-1670793629760-e6432f5a9213?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D"
+                alt="" />
+            <img
+                src="https://images.unsplash.com/photo-1671129731742-a893ea6d8ab2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+                alt="" />
+            <img
+                src="https://images.unsplash.com/photo-1671129731764-139220e6a5da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+                alt="" />
+            <img
+                src="https://images.unsplash.com/photo-1670160942428-22ecf8aae0b0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+            <img
+                src="https://images.unsplash.com/photo-1667502102937-6382343eed85?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+            <img
+                src="https://media.istockphoto.com/id/157557645/vector/a-teal-gift-box-with-a-bright-yellow-ribbon.webp?s=170667a&w=0&k=20&c=4YU_X6HSataa_O5snEBUJHk8p34HIT31GaVagtcMQGI="
+                alt="" />
+            <img
+                src="https://images.unsplash.com/photo-1670160942428-22ecf8aae0b0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+        </div>
+    </body>
+</html>
