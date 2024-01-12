@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <select id="sorting">
+                <option value="">sort</option>
+                <option value="Lowtohigh">Low to Ligh</option>
+                <option value="Hightolow">High To Low</option>
+            </select>
+            <button id="sortlow">LTH</button>
+            <button id="sorthigh">HTL</button>
+        </div>
+        <script>
+            function sortingData() {
+                let arr = [
+                    { price: 35 },
+                    { price: 30 },
+                    { price: 34 },
+                    { price: 31 },
+                    { price: 20 },
+                ];
+                let sortValue = arr.sort((a, b) => {
+                    return a.price - b.price;
+                });
+                document.write(sortValue);
+                console.log(sortValue);
+            }
+            let lth = document.getElementById("sorting");
+            lth.addEventListener("onChange", sortingData);
+        </script>
+    </body>
+</html>

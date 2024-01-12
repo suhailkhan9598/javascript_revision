@@ -25,8 +25,8 @@
 //     return value1>2
 // })
 
-const numbers = [1, 2, 3,2];
+const numbers = [1, 2, 3, 2, 10];
 let newdata = numbers.reduce(function (value1, value2) {
-    return value1 + value2*value1
+    return value1 - value2
 })
 console.log(newdata);
