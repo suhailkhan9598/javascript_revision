@@ -126,7 +126,8 @@ height: auto;
 
 input{
     height: 40px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     /* border: 1px solid gray; */
 
 padding-left: 10px;
