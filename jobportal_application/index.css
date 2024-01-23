@@ -154,3 +154,11 @@ form{
     padding:20px;
 }
 }
+.second{
+  width: 50%;
+  margin: auto;
+  border-style: double;
+  border: 1px solid salmon;
+  border-width: 2px;
+}
+/* boi.callcentre@bankofindia.co.in */
