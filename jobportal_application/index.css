@@ -156,7 +156,7 @@ form{
 }
 .second{
   width: 50%;
-  margin: auto;
+  /* margin: auto; */
   border-style: double;
   border: 1px solid salmon;
   border-width: 2px;
